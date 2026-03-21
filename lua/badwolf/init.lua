@@ -13,6 +13,7 @@ function M.setup(opts)
   vim.g.badwolf_css_props_highlight = opts.css_props_highlight or 0
   vim.g.badwolf_darkgutter = opts.darkgutter or false
   vim.g.badwolf_tabline = opts.tabline or nil
+  vim.g.badwolf_bg_color = opts.bg_color or "coal"
   
   -- Load the colorscheme
   vim.cmd.colorscheme('badwolf')

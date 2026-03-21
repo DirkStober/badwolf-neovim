@@ -18,7 +18,8 @@ local options = {
   html_link_underline = vim.g.badwolf_html_link_underline or 1,
   css_props_highlight = vim.g.badwolf_css_props_highlight or 0,
   darkgutter = vim.g.badwolf_darkgutter or false,
-  tabline = vim.g.badwolf_tabline or nil
+  tabline = vim.g.badwolf_tabline or nil,
+  bg_color = vim.g.badwolf_bg_color or "coal"
 }
 
 -- Set background to dark
@@ -81,7 +82,7 @@ local colors = {
 }
 
 -- Gutter color based on config
-local gutter = options.darkgutter and 'blackestgravel' or 'blackgravel'
+local gutter = options.darkgutter and 'blackestgravel' or options.bg_color
 
 -- Tabline configuration
 local tabline_color
@@ -172,7 +173,7 @@ local function apply_colorscheme()
   -- Vanilla Vim
   
   -- General/UI
-  highlight('Normal', 'plain', 'blackgravel')
+  highlight('Normal', 'plain', options.bg_color)
   highlight('Folded', 'mediumgravel', 'bg')
   highlight('VertSplit', 'lightgravel', 'bg')
   highlight('CursorLine', '', 'darkgravel')
