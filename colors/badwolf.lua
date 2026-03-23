@@ -129,6 +129,8 @@ local function highlight(group, fg, bg, attr, sp)
       if color then
         hl.fg = '#' .. color.gui
         hl.ctermfg = color.cterm
+      else
+        hl.fg = fg
       end
     end
   end
@@ -496,6 +498,13 @@ local function apply_colorscheme()
   highlight('VimMapModKey', 'dress')
   highlight('VimNotation', 'dress')
   highlight('VimBracket', 'dress')
+
+
+  -- Nerdtree
+  --  highlight('@keyword.import','lime','','bold')
+  --  highlight('@function.builtin','orange')
+  --  highlight('@function.builtin.verilog','lime')
+  --  highlight('@variable.member','violet')
 end
 
 -- Execute the colorscheme
