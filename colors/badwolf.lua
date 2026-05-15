@@ -503,8 +503,12 @@ local function apply_colorscheme()
   -- Nerdtree
   highlight('@keyword.import','lime','','bold')
   --  highlight('@function.builtin','orange')
-  highlight('@function.builtin.verilog','lime')
+  highlight('@function.builtin','lime')
   highlight('@variable.member','violet')
+
+  highlight('@type.builtin','pink')
+
+  highlight('@keyword.directive', 'lime','','bold')
 end
 
 -- Execute the colorscheme
