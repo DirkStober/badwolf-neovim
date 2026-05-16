@@ -506,9 +506,11 @@ local function apply_colorscheme()
   highlight('@function.builtin','lime')
   highlight('@variable.member','violet')
 
-  highlight('@type.builtin','pink')
+  highlight('@type.builtin','dress')
 
   highlight('@keyword.directive', 'lime','','bold')
+  highlight('@compiler.directive', 'lime','','bold')
+
 end
 
 -- Execute the colorscheme
